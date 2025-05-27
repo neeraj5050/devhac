@@ -1,0 +1,427 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+}
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  padding: 80px 20px;
+  color: white;
+}
+
+.campus-map {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #e6f0ff;
+}
+
+.stop:hover {
+  stroke: black;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section (optional reuse) */
+.hero {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  padding: 4rem 1rem;
+}
+
+/* Contact form styling */
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+}
+
+/* Tooltip (if reused elsewhere) */
+.tooltip-box {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional responsiveness enhancements */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+}
+
+/* Improved Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100%;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: white;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+  color: #ffdd57;
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  header h1 {
+    flex: 0 0 auto;
+    text-align: left;
+  }
+
+  header nav {
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+}
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #eaf4ff;
+}
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  padding: 60px 20px;
+  color: white;
+}
+
+/* Campus map styling */
+.campus-map {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #e6f0ff;
+}
+.map-wrapper {
+  overflow-x: auto;
+}
+
+/* Bus icon animation */
+.bus-icon {
+  fill: red;
+  stroke: white;
+  stroke-width: 2px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { r: 6; opacity: 1; }
+  50% { r: 9; opacity: 0.6; }
+  100% { r: 6; opacity: 1; }
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  margin-top: 40px;
+}
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  padding: 60px 20px;
+  color: white;
+}
+
+/* Campus map styling */
+.campus-map {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #e6f0ff;
+}
+.map-wrapper {
+  overflow-x: auto;
+}
+
+/* Bus icon animation */
+.bus-icon {
+  fill: red;
+  stroke: white;
+  stroke-width: 2px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { r: 6; opacity: 1; }
+  50% { r: 9; opacity: 0.6; }
+  100% { r: 6; opacity: 1; }
+}
+
+/* Footer */
+footer {
+  background-color: #0977e6;
+  color: white;
+  padding: 1rem;
+  margin-top: 40px;
+}
+.route h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.route .list-group-item {
+  border-left: 5px solid #007bff;
+}
+
+.route.text-success .list-group-item {
+  border-left-color: #28a745;
+}
+
+.route.text-warning .list-group-item {
+  border-left-color: #ffc107;
+}
+
+.route.text-danger .list-group-item {
+  border-left-color: #dc3545;
+}
+.bus-header {
+  background: linear-gradient(#0731db, #1e75ee);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.bus-bg-animation {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2390/2390276.png');
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 10px;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  animation: moveBus 12s linear infinite;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+@keyframes moveBus {
+  0% {
+    left: -80px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.bus-header {
+  background: linear-gradient(#2033e4, #2047d4);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  overflow: hidden;
+}
+
+.bus-img {
+  position: absolute;
+  bottom: 20px;
+  left: -150px; /* start outside from left */
+  width: 120px;  /* adjust size */
+  height: auto;
+  animation: driveBus 10s linear infinite;
+  opacity: 0.8;
+  z-index: 0; /* behind the text */
+}
+
+@keyframes driveBus {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+.bus-header {
+  background: linear-gradient(#006064, #00838f);
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+

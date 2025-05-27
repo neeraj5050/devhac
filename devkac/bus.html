@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Bus Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .bus-icon {
+      fill: red;
+      stroke: white;
+      stroke-width: 2px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { r: 6; opacity: 1; }
+      50% { r: 9; opacity: 0.6; }
+      100% { r: 6; opacity: 1; }
+    }
+
+    .map-wrapper {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📍 Live Tracker</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bus.html">Live Tracker</a>
+      <a href="#">Routes</a>
+      <a href="help.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero text-center text-white">
+    <h2>Track Your Campus Buses in Real-Time</h2>
+    <p>Static positions shown for demonstration purposes</p>
+  </section>
+
+  <section class="container my-5">
+    <h3 class="text-center mb-4">Campus Map View</h3>
+    <div class="map-wrapper">
+      <svg viewBox="0 0 800 400" class="campus-map">
+        <!-- Route A -->
+        <line x1="100" y1="80" x2="300" y2="80" stroke="#007bff" stroke-width="4"/>
+        <line x1="300" y1="80" x2="500" y2="120" stroke="#007bff" stroke-width="4"/>
+
+        <!-- Route B -->
+        <line x1="150" y1="200" x2="400" y2="240" stroke="green" stroke-width="4"/>
+
+        <!-- Stops -->
+        <circle cx="100" cy="80" r="8" fill="#007bff"/>
+        <circle cx="300" cy="80" r="8" fill="#007bff"/>
+        <circle cx="500" cy="120" r="8" fill="#007bff"/>
+        <circle cx="150" cy="200" r="8" fill="green"/>
+        <circle cx="400" cy="240" r="8" fill="green"/>
+
+        <!-- Buses -->
+        <circle cx="240" cy="80" r="6" class="bus-icon" />
+        <circle cx="180" cy="210" r="6" class="bus-icon" />
+      </svg>
+    </div>
+  </section>
+
+  <section class="text-center my-4">
+    <p><strong>Bus Status:</strong> Updated every 30 seconds (placeholder)</p>
+    <button class="btn btn-outline-primary" onclick="refreshMap()">Refresh Positions</button>
+  </section>
+
+  <footer class="text-center p-3 bg-dark text-white">
+    &copy; 2025 Campus Bus Route Tracker. All Rights Reserved.
+  </footer>
+
+  <script>
+    function refreshMap() {
+      alert("Live data update not available in static version.");
+    }
+  </script>
+</body>
+</html>

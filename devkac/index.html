@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bus Route Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="bus-header position-relative overflow-hidden text-white text-center py-4">
+  <!-- Bus image animation -->
+  <img src="my 1-devhack.jpg.png" alt="Bus" class="bus-img" />
+  
+  <h1 class="position-relative">🚏 Bus Routes</h1>
+  <nav class="position-relative">
+    <a href="index.html">Home</a>
+    <a href="bus.html">Live Tracker</a>
+    <a href="routes.html">Routes</a>
+    <a href="notices.html">notice</a>
+    <a href="help.html">Contact</a>
+  </nav>
+</header>
+
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white">
+    <h1>Campus Bus Route Tracker</h1>
+    <p>Interactive Map & Fixed Bus Timings</p>
+  </section>
+
+  <!-- Map Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Campus Map</h2>
+    <div class="map-wrapper">
+      <svg viewBox="0 0 800 400" class="campus-map">
+        <!-- Route A (Blue) -->
+        <line x1="100" y1="80" x2="300" y2="80" stroke="#007bff" stroke-width="4" />
+        <line x1="300" y1="80" x2="500" y2="120" stroke="#007bff" stroke-width="4" />
+
+        <!-- Route B (Green) -->
+        <line x1="150" y1="200" x2="400" y2="240" stroke="green" stroke-width="4" />
+
+        <!-- Stops -->
+        <circle cx="100" cy="80" r="10" fill="#007bff" class="stop" data-name="Main Gate" data-time="8:00 AM" />
+        <circle cx="300" cy="80" r="10" fill="#007bff" class="stop" data-name="Hostel" data-time="8:05 AM" />
+        <circle cx="500" cy="120" r="10" fill="#007bff" class="stop" data-name="Library" data-time="8:20 AM" />
+
+        <circle cx="150" cy="200" r="10" fill="green" class="stop" data-name="Science Block" data-time="9:00 AM" />
+        <circle cx="400" cy="240" r="10" fill="green" class="stop" data-name="Admin Block" data-time="9:15 AM" />
+      </svg>
+    </div>
+    <div id="tooltip" class="tooltip-box d-none"></div>
+    <div class="legend text-center mt-3">
+      <span class="badge bg-primary">Route A</span>
+      <span class="badge bg-success">Route B</span>
+    </div>
+  </section>
+
+<!-- Timetable Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">📅 Bus Timetable</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-primary">
+        <tr>
+          <th scope="col">Route</th>
+          <th scope="col">Stop</th>
+          <th scope="col">Arrival Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Route A -->
+        <tr><td>Route A</td><td>Main Gate</td><td>8:00 AM</td></tr>
+        <tr><td>Route A</td><td>Hostel</td><td>8:05 AM</td></tr>
+        <tr><td>Route A</td><td>Library</td><td>8:20 AM</td></tr>
+        <tr><td>Route A</td><td>Engineering Block</td><td>8:30 AM</td></tr>
+
+        <!-- Route B -->
+        <tr><td>Route B</td><td>Science Block</td><td>9:00 AM</td></tr>
+        <tr><td>Route B</td><td>Admin Block</td><td>9:15 AM</td></tr>
+        <tr><td>Route B</td><td>Auditorium</td><td>9:25 AM</td></tr>
+        <tr><td>Route B</td><td>Playground</td><td>9:35 AM</td></tr>
+
+        <!-- Route C -->
+        <tr><td>Route C</td><td>North Gate</td><td>10:00 AM</td></tr>
+        <tr><td>Route C</td><td>Workshop</td><td>10:10 AM</td></tr>
+        <tr><td>Route C</td><td>Research Center</td><td>10:25 AM</td></tr>
+        <tr><td>Route C</td><td>Faculty Parking</td><td>10:40 AM</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+  <footer class="text-center p-3 bg-dark text-white">
+    &copy; 2025 Campus Bus Route Tracker. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
